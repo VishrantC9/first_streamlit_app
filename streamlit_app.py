@@ -45,8 +45,7 @@ try:
     
 except URLError as e:
   streamlit.error()
-
-my_cur.execute("use warehouse pc_rivery_wh")
+use warehouse pc_rivery_wh
 
 #import snowflake.connector 
 streamlit.header("The fruit load list contains:")
