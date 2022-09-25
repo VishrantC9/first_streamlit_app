@@ -50,7 +50,6 @@ except URLError as e:
 #import snowflake.connector 
 streamlit.header("The fruit load list contains:")
 #adding snowflake functions
-my_cur.execute("use warehouse pc_rivery_wh")
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
        my_cur.execute("SELECT * from fruit_load_list")
